@@ -7,9 +7,7 @@ arch:
   # - ppc64le  # Apply patch
   - arm64
 
-install:
-    - ci-base/install.sh travis sysbench
-    - cat .cb_client.json
+install: ci-base/install.sh travis sysbench
 script: ./run.sh
 jobs:
   exclude:
